@@ -1,0 +1,79 @@
+
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  max-width: 1300px;
+  margin: auto;
+  margin-left:80px;
+  line-height: 20px
+}
+
+#TOC {
+  position: fixed;
+  left: 0;
+  top: 140px;
+  width: 250px;
+  height: 100%;
+  overflow:auto;
+  background-color: rgb(230, 242, 255);
+  color: Gray;    
+}
+
+.title {
+  margin-right: 200px;
+  color: Orange;
+  font-weight: bold;
+  font-size: 190%;
+}
+
+.author{
+  color: Gray; 
+  font-weight: normal;
+  font-style: italic;
+}
+
+.date{
+  color: Gray;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1 {
+  color: DodgerBlue;
+  font-size: 170%;
+  font-weight: bold;
+}
+
+h2 {
+  color: DodgerBlue;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+h3 {
+  color: RoyalBlue;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+h4 {
+  color: RoyalBlue;
+  font-size: 110%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h5 {
+  color: RoyalBlue;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.watermark {
+  opacity: 0.2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 500%;
+  color: #00407d;
+}
