@@ -1,6 +1,6 @@
 ---
 title: "RMarkdown: Introductory Tutorial"
-author: "Gabriela Mourão"
+author: "Gabriela Mour?o"
 date: "27 de novembro de 2018"
 output: 
       html_document:
@@ -10,7 +10,7 @@ output:
             code_download: yes
             number_sections: true
             highlight: haddock
-            css: BeautifulR.css
+            theme: journal
 ---
 
 <img src="Rlogo.svg" style="position:fixed;top:10px;left:50px;" width="140" height="140"/>
@@ -30,6 +30,8 @@ library(ggplot2)
 library(plotly)
 #automatically format the R code
 library(formatR)
+library(tinytex)
+
 ```
 <br>
 The main goal in this document in cover the very basics formatation for Rmarkdown, no matter if you are building a Html or pdf document.
@@ -174,7 +176,7 @@ Following you can find some usage examples of the mentioned options:
             theme: lumen
 ```
 
-![](C:/Users/gabriela.mourao/Documents/6-PESSOAL/R-files/TUTORIAL_MARKDOWN/output1.png) 
+![](https://res.cloudinary.com/gcmourao/image/upload/v1550130046/output1.png) 
 
 <br>
 ---------------------------------   
@@ -194,7 +196,7 @@ output:
             theme: lumen
 
 ```
-![](C:/Users/gabriela.mourao/Documents/6-PESSOAL/R-files/TUTORIAL_MARKDOWN/output2.png)   
+![](output2.png)   
 
 <br>
 
@@ -203,19 +205,19 @@ output:
 <br>
 Flatly theme:   
 
-![](C:/Users/gabriela.mourao/Documents/6-PESSOAL/R-files/TUTORIAL_MARKDOWN/flatly.png)
+![](flatly.png)
 
 <br>  
 
 ----------------------------------------   
 
 Journal theme:   
-![](C:/Users/gabriela.mourao/Documents/6-PESSOAL/R-files/TUTORIAL_MARKDOWN/journal_and_haddock.png)
+![](journal_and_haddock.png)
 
 ---------------------------------    
 
 Lumen theme:   
-![](C:/Users/gabriela.mourao/Documents/6-PESSOAL/R-files/TUTORIAL_MARKDOWN/lumen.png)
+![](lumen.png)
 
 <br>
 
@@ -225,7 +227,7 @@ Lumen theme:
 
 ## Echo Options
 
-To insert some codes in the markdown document, the called code chunk, it is necessary to add three backticks like ´´´ followed by {r}, where r indicates the language name. To close the code chunk, add another three backticks in the end. You can write chunk options in the curly braces, as we are going to see in the following examples.     
+To insert some codes in the markdown document, the called code chunk, it is necessary to add three backticks like ??? followed by {r}, where r indicates the language name. To close the code chunk, add another three backticks in the end. You can write chunk options in the curly braces, as we are going to see in the following examples.     
 
 ```{r}
 summary(cars)
@@ -281,7 +283,7 @@ summary(cars)
 
 ```{r, out.width='30%', fig.align='center', fig.cap='Amazing Hong Kong'}
 
-knitr::include_graphics('C:/Users/gabriela.mourao/Documents/6-PESSOAL/timon-studler-49992-unsplash.jpg')
+#knitr::include_graphics('C:/Users/gabriela.mourao/Documents/6-PESSOAL/timon-studler-49992-u#nsplash.jpg')
 
 ```
 
@@ -317,7 +319,7 @@ For example:
 - The total distance in Cars dataset is `r sum(cars$dist)`
 
 
-![](C:/Users/gabriela.mourao/Documents/6-PESSOAL/R-files/TUTORIAL_MARKDOWN/Inline_code.png)
+![](Inline_code.png)
 
 ---------------------------------
 
@@ -531,7 +533,7 @@ https://www.rstudio.com
 
 For images, the syntax is very similar to links:   
 
-![The amazing Hong Kong](C:/Users/gabriela.mourao/Documents/6-PESSOAL/timon-studler-49992-unsplash.jpg)^[photo by timon studler on unsplash]
+nn
 
 ```
 
